@@ -1,0 +1,19 @@
+.create-creative-container {
+  background-color: #eee;
+  padding: 20px;
+  min-height: calc(100vh - 84px);
+  .creative-type-list {
+    display: flex;
+    background-color: #fff;
+    margin-bottom: 20px;
+  }
+  .creative-type-detail {
+    padding: 20px;
+    background-color: #fff;
+    min-height: 40vh;
+    overflow: auto;
+  }
+  .action-area {
+    margin-top: 20px;
+  }
+}

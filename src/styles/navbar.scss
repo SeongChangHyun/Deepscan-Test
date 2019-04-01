@@ -1,0 +1,51 @@
+.navbar {
+  width: 100%;
+  padding: 0 37px;
+  height: $headerHight;
+  line-height: $headerHight;
+  border-bottom: 1px solid $light_gray;
+
+  .icon-action {
+    margin: 10px 0 10px 20px;
+    width: 44px;
+    height: 44px;
+    padding: 11px 12px;
+    border-radius: 50px;
+    background-color: $iconAction;
+    border: 1px solid $borderIconAction;
+    cursor: pointer;
+    svg {
+      color: $menuText;
+      height: 20px;
+      width: 20px;
+      position: absolute;
+    }
+
+    &:hover {
+      background-color: $borderIconAction;
+    }
+
+    .lang-select {
+      position: absolute;
+      height: 20px;
+      width: 25px;
+    }
+  }
+
+  .change-lang {
+    cursor: pointer;
+    .label-lang>div {
+      display: flex;
+      align-items: center;
+    }
+    .svg-icon {
+      width: 2em;
+      height: 2em;
+    }
+    span {
+      font-size: 16px;
+      padding: 0 0.5rem;
+      color: $menuText;
+    }
+  }
+}

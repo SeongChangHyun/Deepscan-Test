@@ -1,0 +1,27 @@
+.currency-input-container {
+  display: flex;
+  align-items: center;
+  /deep/ input {
+    max-width: 150px;
+    min-width: 70px;
+    border-radius: 0;
+    height: 36px;
+  }
+  button {
+    display: none;
+    height: 36px;
+    background-color: transparent;
+    border: 1px solid #dcdfe6;
+    color: #606266;
+    border-radius: 0;
+    margin-left: 0;
+    padding: 10px;
+    white-space: nowrap;
+  }
+  button.sub-button {
+    padding: 10px 13px;
+  }
+  &:focus-within button {
+    display: block;
+  }
+}

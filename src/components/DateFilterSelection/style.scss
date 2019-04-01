@@ -1,0 +1,33 @@
+.date-selection {
+    float: right;
+    width: 18%;
+    min-width: 200px;
+    padding: 0px 0px 4px 0px;
+    .el-select {
+        width: 100%;
+        /deep/ .el-input {
+            .el-input__inner {
+                border-radius: 0;
+                border: 0px solid black
+            }
+        }
+    }
+}
+
+@media(max-width: 840px) {
+    .date-selection {
+        float: right;
+        width: 45%;
+        min-width: 200px;
+        padding: 0px 0px 4px 0px;
+    }
+}
+
+@media(max-width: 440px) {
+    .date-selection {
+        float: right;
+        width: 100%;
+        min-width: 200px;
+        padding: 0px 0px 4px 0px;
+    }
+}
