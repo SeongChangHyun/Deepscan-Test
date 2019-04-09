@@ -1,0 +1,59 @@
+{
+    "campaign": {
+        "get_campaign_reporting_apiendpoint": "/clients/{client_id}/report/campaigns",
+        "get_checking_tag_apiendpoint": "/clients/{client_id}/tracking-tags/verify",
+        "get_industry_apiendpoint": "/clients/{client_id}/industry",
+        "get_list_campaign_apiendpoint": "/clients/{client_id}/campaigns",
+        "get_ad_group_apiendpoint": "/clients/{client_id}/campaign-groups",
+        "get_list_app_campaigns_apiendpoint": "/clients/{client_id}/app-campaigns",
+        "get_list_country_apiendpoint": "/countries",
+        "get_list_location_apiendpoint": "/createCampaign/getListLocation",
+        "get_list_language_apiendpoint": "/clients/{client_id}/languages",
+        "get_list_device_apiendpoint": "/clients/{client_id}/devices",
+        "bid_details_calc_estimate_apiendpoint": "/createCampaign/bidDetailsCalcEstimate",
+        "probability_purchase_calc_estimate_apiendpoint": "/createCampaign/probabilityPurchaseCalcEstimate"
+
+    },
+    "user": {
+        "login_apiendpoint": "/oauth/token",
+        "logout_apiendpoint": "/login/logout",
+        "info_apiendpoint": "/user/info"
+    },
+    "auth": {
+        "active_account_apiendpoint": "/active-account",
+        "send_confirm_code_apiendpoint": "/send-confirm-code",
+        "check_email_apiendpoint": "/check-email",
+        "reactivation_email_apiendpoint": "/reactivation-email",
+        "check_license_apiendpoint": "/check-license",
+        "list_bank_apiendpoint": "/list-bank",
+        "check_bankbook_apiendpoint": "/check-bankbook",
+        "check_address_apiendpoint": "/check-address",
+        "register_account_apiendpoint": "/register-account",
+        "reset_password_apiendpoint": "/reset-password",
+        "check_code_reset_password_apiendpoint": "/check-code-reset-password",
+        "check_code_phone_number_apiendpoint": "/check-code-phone-number",
+        "change_password_apiendpoint": "/change-password"
+    },
+    "creative": {
+        "create_creative_apiendpoint": "/creatives/add",
+        "get_ci_apiendpoint": "/creatives/creativeImages",
+        "get_creatives_apiendpoint": "/creatives/list",
+        "get_creative_apiendpoint": "/creatives/update",
+        "update_dynamic_creative_apiendpoint": "/creatives/updateDynamicCreative",
+        "get_image_sizes_by_account_apiendpoint": "/creatives/imageSizesByAccount",
+        "delete_ci_apiendpoint": "/creatives/deleteCreativeImages",
+        "delete_creative_apiendpoint": "/creatives/deleteCreative",
+        "activate_ci_apiendpoint": "/creatives/activateCreativeImages",
+        "create_creative_images_apiendpoint": "/creatives/createCreativeImages",
+        "activate_creative_apiendpoint": "/creatives/activateCreative",
+        "deactivate_ci_apiendpoint": "/creatives/deactivateCreativeImages",
+        "deactivate_creative_apiendpoint": "/creatives/deactivateCreative"
+    },
+    "client_management": {
+        "get_list_industry": "/clients/list-industry",
+        "get_list": "/clients/list-clients",
+        "create_client": "/clients/create",
+        "update_client": "/clients/update",
+        "delete_client": "/clients/delete"
+    }
+}

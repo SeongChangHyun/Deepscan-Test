@@ -1,0 +1,29 @@
+.detail-options {
+  padding: 10px 0;
+  .detail-options-title {
+    margin-bottom: 10px;
+  }
+}
+.item-title {
+  height: 16px;
+  color: #323A46;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+}
+.item-content {
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+  .el-checkbox, .el-select {
+    margin-right: 10px;
+  }
+  div /deep/ input {
+    flex: 1;
+    padding: 2px 10px;
+    height: 29px;
+    border: 1px solid #1D93CF;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+  }
+}

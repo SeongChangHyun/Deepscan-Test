@@ -1,0 +1,38 @@
+import { CreativeConstant } from '@/common/constants'
+
+export const DetailOption = {
+  action: '',
+  ci_ids: '',
+  creative_type: '',
+  banner_name: '',
+  url: '',
+  impression_check_url: '',
+  app_deeplink_android: '',
+  impression_check_app_deeplink_android: '',
+  app_deeplink_apple: '',
+  impression_check_app_deeplink_apple: '',
+  app_mobile_url: '',
+  impression_check_app_mobile_url: '',
+  app_deeplink_website: '',
+  tmp_file_list: '',
+  ci_image: '',
+  campaign_image: '',
+  call_to_action: '',
+  background_color: '',
+  send_type: 1,
+  ad_headline: '',
+  ad_body: '',
+  brand_name: '',
+  star_rating: '',
+  app_price: '',
+  extend_options: {},
+  app_name: '',
+  app_icon_image: '',
+  campaign_type: CreativeConstant.CAMPAIGN_TYPE.WEB_CAMPAIGN,
+  video_file_name: '',
+  watermark_image: '',
+  watermark_ids: '',
+  end_cap_image: '',
+  end_cap_ids: ''
+}
+

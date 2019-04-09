@@ -1,0 +1,31 @@
+@import '@/styles/variables.scss';
+
+.create-clients {
+  padding: 0 20px 43px;
+  /deep/.el-form-item {
+    margin-bottom: 0.5rem;
+    &__label {
+      padding: 0;
+    }
+  }
+
+  .w-100px {
+    width: 100px;
+  }
+  .content-form {
+    &>div {
+      background-color: $white;
+      border: 1px solid $grey;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+  }
+  .timer {
+    width: fit-content;
+    float: right;
+  }
+}
+
+.mt--heightRow {
+  margin-top: -$height-row;
+}

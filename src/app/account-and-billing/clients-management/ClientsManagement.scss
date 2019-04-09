@@ -1,0 +1,22 @@
+@import '@/styles/variables.scss';
+
+.client-management {
+  padding: 0 20px 40px;
+  /deep/ .el-pagination {
+    .el-pager li {
+      height: 32px;
+      line-height: 32px;
+    }
+    button {
+      height: 32px;
+    }
+  }
+  a {
+    text-decoration: underline;
+    color: $light-blue;
+  }
+}
+
+.select-per-page {
+  width: 80px;
+}
