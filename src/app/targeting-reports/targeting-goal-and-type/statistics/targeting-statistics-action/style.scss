@@ -1,0 +1,33 @@
+.statistics-action {
+    padding: 10px 0px 7px 0;
+    .el-button {
+        margin: 0px;
+        margin-left: 0px;
+        padding: 4px 8px;
+        float: left;
+        height: 36px
+    }
+    .el-button.statistics-button-download {
+        background-color: #1D93CF;
+        color: white;
+        padding: 5px 10px;
+        margin: 5px 15px 5px 0;
+        overflow: hidden;     
+    }
+    .campaign-action {
+        background-color: #1D93CF;
+        color: white;
+        margin-right: 6px;
+        padding: 5px 15px;
+        border-radius: 0;
+    }
+    .statistics-dropdown {
+        margin: 5px 10px 5px 0;   
+        overflow: hidden;
+    }
+}
+
+.el-button{
+    border-radius: 0;
+    border: none;
+}

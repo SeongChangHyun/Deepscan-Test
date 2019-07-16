@@ -1,0 +1,60 @@
+.daily-reporting {
+  padding: 0px 36px;
+}
+/deep/.download-btn {
+  background-color: #1D93CF;
+  color: white;
+  margin-right: 20px;
+  .download-icon {
+    width: 12px;
+    height: 14px;
+    margin-right: 10px
+  }
+}
+.statistics-dropdown {
+  float: right;
+  margin-left: 20px;
+}
+/deep/.children-level > td:first-child div {
+  margin-left: 40px;
+}
+.actions-filters-bar {
+  margin-top: 20px;
+  padding: 10px 20px;
+  min-height: 200px;
+  background-color: #FFFFFF;
+}
+
+.data-grid-container {
+  padding: 0 20px;
+  background-color: white;
+}
+/deep/.toggle-icons > i {
+  color: #1D93CF;
+}
+
+@media screen and (max-width: 768px) {
+  .el-select {
+    width: 50%;
+    float: right;
+  }
+  .el-col-xs-12 {
+    margin-top: 10px;
+    width: 50%;
+    float: right;
+  }
+  .download-btn {
+    width: 42%;
+    margin-right: 20px;
+    padding: 10px 10px;
+  }
+  .actions-filters-bar {
+    padding: 10px 10px;
+  }
+  .data-grid-container {
+    padding: 0 10px;
+  }
+  .reporting-type .el-cascader {
+    min-width: 134px;
+  }
+}

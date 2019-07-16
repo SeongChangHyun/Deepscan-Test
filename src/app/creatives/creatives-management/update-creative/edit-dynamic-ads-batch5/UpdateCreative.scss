@@ -1,0 +1,105 @@
+.dynamic-ads-batch5{
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    /deep/ .el-form-item__label {
+      float: none;
+    }
+    .creative-name-input {
+      .el-input {
+        width: 25%;
+      }
+    }
+    .group-color-picker {
+      .el-color-picker {
+        float: left;
+        margin-right: 10px;
+      }
+      .el-input {
+        width: calc(100% - 46px);
+      }
+      .width-36 {
+        width: 36px;
+        margin-right: 10px;
+        /deep/ .el-input__inner {
+            padding: 0;
+            text-align: center;
+        }
+      }
+    }
+  }
+  .footer-btn {
+    margin-left: 20px;
+  }
+  .creative-name{
+      margin-top: 5px;
+      margin-bottom: 5px;
+      font-weight: bold;
+  }
+  .creative-name-content{
+      margin-top: 5px;
+      margin-bottom: 5px;
+  }
+  .input-creative-name{
+      width: 200px;
+      height: 30px;
+      text-align: center;
+  }
+  
+  .motion-row {
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+  
+  .motion {
+      margin-top: 5px;
+      margin-bottom: 5px;
+  }
+  
+  .full-width-column {
+      width: 100%;
+  }
+  
+  .align-left {
+      margin-left: 20px;
+  }
+  
+  .align-bottom{
+      margin-bottom: 10px;
+  }
+  
+  .align-top {
+      margin-top: 10px;
+  }
+  
+  .diagonal {
+      transform: rotate(120deg); 
+      margin-top: 15px;
+  }
+  
+  .diagonal-batch2 {
+      width: 26px;
+      box-align: center;
+  }
+  
+  .title-font-size /deep/ input {
+      text-align: center;
+      width: 34px;
+      padding: 0px;
+  }
+  
+  .bold-check {
+      margin-top: 8px; 
+      margin-left: 10px;
+  }
+  
+  .horizontal {
+      margin-top: 0.5px;
+      margin-bottom: 0.5px;
+  }
+  
+  .advanced-options {
+      margin-top: 5px;
+      margin-bottom: 5px;
+  }
+  

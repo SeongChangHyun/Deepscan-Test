@@ -1,0 +1,63 @@
+.graph-filter-child {
+    height: 30px;
+    border: 1px solid #DEE3E9;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    display: flex;
+    .el-select {
+        flex-direction: row;
+        height: 29px;
+        flex: 1;
+        /deep/ .el-input {
+            .el-input__inner {
+                height: 28px;
+                border-radius: 0;
+                border: none;
+                border-left: none;
+                padding-left: 2px;
+                color: #323A46;
+                font-size: 14px;
+                line-height: 16px;
+            }
+            .el-input__suffix {
+                width: 34px;
+                max-width: 34px;
+                border-left: 1px solid #DEE3E9;
+                padding-left: 4px;
+                .el-icon-arrow-up {
+                    margin-top: 4px
+                }
+                .el-icon-circle-close {
+                    margin-top: 4px
+                }
+                .is-reverse {
+                    margin-top: -4px
+                }
+            }
+        }
+    }
+    .graph-filter-child-background {
+        margin: 4px 5px 4px 5px;
+        height: 21px;
+        min-width: 21px;
+        width: 21px;
+        border-radius: 3px;
+        background-color: #2770C0;
+    } 
+}
+
+
+@media(max-width: 1199px) {
+    .graph-filter-child:nth-child(5) {
+        margin-top: 6px
+    }
+    .graph-filter-child:nth-child(7) {
+        margin-top: 6px
+    }
+}
+
+@media(max-width: 768px) {
+    .graph-filter-child:not(:first-child):not(:nth-child(3)) {
+        margin-top: 15px !important
+    }
+}

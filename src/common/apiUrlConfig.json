@@ -1,0 +1,179 @@
+{
+    "clients": {
+        "get_industry": "/industry",
+        "verify_tracking_tag": "/tracking-tags/verify",
+        "bid_monthly_estimation": "/monthly-estimation-on-bid",
+        "probability_purchase_calc_estimate": "/probabilityPurchaseCalcEstimate",
+        "campaign": {
+            "get_campaign_groups": "{client_id}/campaign-groups",
+            "get_list_campaigns": "{client_id}/campaigns",
+            "get_list_app_campaigns": "{client_id}/apps"
+        },
+        "reports": {
+            "campaigns": "/accounts/{account_id}/clients/{client_id}/report/campaigns",
+            "creatives": "/report/creatives",
+            "daily": "/report/daily",
+            "demographic": "/report/demographic",
+            "domain": "/report/domain",
+            "goal_targeting_type": "/report/goal-targeting-type",
+            "performance": "/report/performance"
+        },
+        "creative": {
+            "create_creative_banner": "/{account_id}/clients/{client_id}/creatives/fixed-banner",
+            "get_ci": "/creatives/creativeImages",
+            "get_creatives": "/{account_id}/clients/{client_id}/creatives",
+            "get_creative": "/creatives/update",
+            "update_dynamic_creative": "/creatives/updateDynamicCreative",
+            "get_image_sizes_by_account": "/creatives/imageSizesByAccount",
+            "delete_ci": "/creatives/deleteCreativeImages",
+            "delete_creative": "/{account_id}/clients/{client_id}/creatives/delete",
+            "activate_ci": "/creatives/activateCreativeImages",
+            "create_creative_images": "/creatives/createCreativeImages",
+            "change_status_creative": "/{account_id}/clients/{client_id}/creatives/change-status",
+            "deactivate_ci": "/creatives/deactivateCreativeImages",
+            "create_creative_animated": "/{account_id}/clients/{client_id}/creatives/animated",
+            "create_creative_native": "/{account_id}/clients/{client_id}/creatives/native",
+            "create_creative_video": "/{account_id}/clients/{client_id}/creatives/video",
+            "create_creative_dynamic": "/{account_id}/clients/{client_id}/creatives/dynamic",
+            "create_creative_upload_images": "/{account_id}/clients/{client_id}/upload-tmp-files",
+            "get_list_size_creative": "/{account_id}/clients/{client_id}/client-creative-sizes"
+        },
+        "client_management": {
+            "get_list_clients": "/{account_id}/clients",
+            "create_client": "/{account_id}/clients",
+            "update_client": "/{account_id}/clients/{client_id}",
+            "update_status_of_client": "/{account_id}/clients/status",
+            "get_client_detail": "/{account_id}/clients/{client_id}",
+            "send_invite_user": "/{account_id}/clients/invite",
+            "list_users": "/user/list",
+            "list_users_by_client": "/user/get-by-client",
+            "assign_role_for_user": "/set-wp-contact-person",
+            "remove_user_permission": "/{account_id}/clients/{client_id}/association",
+            "get_advertiser_term": "/get-advertiser-terms"
+        },
+        "tool": {
+            "delete_feed_setting": "/{account_id}/clients/{client_id}/product-feeds/{feed_id}",
+            "create_feed_setting": "/{account_id}/clients/{client_id}/product-feeds",
+            "get_list_feed_setting": "/{account_id}/clients/{client_id}/product-feeds",
+            "send_invite": "/send-invite",
+            "list_users": "/user/list",
+            "get_list_collected": "/accounts/{account_id}/clients/{client_id}/tracking-tags/information",
+            "download_list_collected": "/{account_id}/clients/{client_id}/tracking-tags/information/download"
+        },
+        "settlementApi": {
+            "get_list_table_top": "/get_list_table_top",
+            "get_list_table_bottom": "/get_list_table_bottom"
+        },
+        "revenue_range": "{client_id}/revenue_range",
+        "get_client_by_create_account": "/accounts/{account_id}/get-client-by-create-account",
+        "custom_user_groups": "{client_id}/custom-user-groups",
+        "product_feed": "{client_id}/campaign-product-feeds",
+        "products": "{client_id}/product-feeds/{product_feed_id}/products",
+        "service_manage": "/service-manage"
+    },
+    "report": {
+        "get_columns": "/columns",
+        "crud_set_columns": "/set-columns",
+        "stats_columns": "/stats-columns",
+        "stats_default_columns": "/stats-default-columns",
+        "get_list_daily_report": "/report/daily",
+        "accounts": {
+            "performance": "/{account_id}/report/performance"
+        }
+    },
+    "accounts": {
+        "active_account": "/active",
+        "re_active_account": "/re-active",
+        "business_register": "/business-register",
+        "personal_register": "/personal-register",
+        "reset_password": "/reset-password",
+        "update_password": "/update-password",
+        "validate_email": "/validate-email",
+        "verify": "/verify",
+        "verify_reset_token": "/verify-reset-token",
+        "send_confirm_code": "/send-confirm-code",
+        "check_license": "/check-license",
+        "list_bank": "/list-bank",
+        "check_bankbook": "/verify-bankbook",
+        "check_address": "/check-address",
+        "get_postal_addresses_kr": "/search-address-kr",
+        "get_postal_addresses_jp": "/search-address-jp",
+        "check_business_license": "/verify-business-license",
+        "check_code_reset_password": "/check-code-reset-password",
+        "check_code_phone_number": "/verify-otp",
+        "create_otp": "/create-otp",
+        "get_info_by_id": "/{account_id}/account-information",
+        "update_information": "/update-information",
+        "reports": {
+            "performance": "/{account_id}/report/performance"
+        },
+        "consignment": "/{account_id}/clients/{client_id}/consignment",
+        "invite": "/clients/invite",
+        "tracking_tags": {
+            "crud_tracking_tag": "{account_id}/clients/{client_id}/tracking-tags",
+            "verify": "/{account_id}/clients/{client_id}/tracking-tags/verify",
+            "status": "{account_id}/clients/{client_id}/tracking-tags/status",
+            "information": "{account_id}/clients/{client_id}/tracking-tags/information"
+        },
+        "performance": "/{account_id}/report/performance",
+        "state_summary": {
+            "statistics": "/{account_id}/clients/{client_id}/product-feeds/products/statistics",
+            "product_list": "/{account_id}/clients/{client_id}/product-feeds/products"
+        },
+        "invite_user_to_manage_clients": "/{account_id}/clients/invite",
+        "remove_user_permission_with_client": "/{account_id}/clients/",
+        "update_commission_fee": "/update-commission-fee",
+        "check_feed_type": "/product-feeds/check-feed-type",
+        "check_feed_full": "/{account_id}/clients/{client_id}/product-feeds/check-feed-url",
+        "check_feed_url": "/{account_id}/clients/{client_id}/product-feeds/check-feed-url"
+    },
+    "list": {
+        "user_interest_directories": "/list/user-interest-directories",
+        "get_list_tracking_companies": "/list/tracking-companies",
+        "article_topics": "/list/article-topics",
+        "carriers": "/list/carriers",
+        "browsers": "/list/browser-with-stat-count",
+        "site_behaviors": "/list/site-behaviors",
+        "manufactures": "/list/manufactures",
+        "get_list_industry": "/list/{account_id}/get-list-industry",
+        "crud_site_behaviors": "/list/accounts/{account_id}/site-behaviors",
+        "get_list_device": "/list/devices",
+        "get_list_language": "/list/languages",
+        "get_list_os": "/list/os",
+        "get_list_country": "/list/business-countries",
+        "get_list_location": "/list/locations",
+        "verify_keyword": "/list/keyword-get-stat-count"
+    },
+    "user": {
+        "login": "/token",
+        "logout": "/login/logout",
+        "get_user_info": "/user-info",
+        "get_account_roles": "/accounts/{account_id}/roles",
+        "get_account_roles_with_role": "/accounts/{account_id}/clients/{client_id}/roles",
+        "get_list_account": "/clients/{account_id}/get-account-for-current-user",
+        "get_list_agency": "/get-list-agency",
+        "get_list_super_admin": "/get-list-super-admin",
+        "get_user_access_of_client": "/get-user-access-of-client",
+        "edit_user_role": "/accounts/{account_id}/edit-user-role",
+        "get_all_account_by_keyword": "/clients/{account_id}/get-all-account-by-keyword",
+        "get_all_users_access_by_create_account": "/accounts/{account_id}/get-all-users-access-by-create-acc",
+        "get_list_accounts_by_client": "/accounts/{account_id}/get-list-users-account-by-client",
+        "get_list_services_configuration": "accounts/{account_id}/services/services-configuration"
+    },
+    "position": {
+        "verify": "/ad-position/verify"
+    },
+    "campaigns": {
+        "grade_bid_calc": "/campaigns/grade-bid-calc"
+    },
+    "targeting": {
+        "get_creatives_report": "targeting/get-creatives-report",
+        "get_time_and_day_report": "targeting/get-time-and-day-report",
+        "get_user_interest": "targeting/get-user-interest"
+    },
+    "common": {
+        "probability_grade": "/campaignacls/display-probability-grade",
+        "product_feed_category_cpc": "/campaigndata/accounts/{account_id}/clients/{client_id}/product-feed-category-cpc",
+        "forecast_of_conversion": "/campaignacls/accounts/{account_id}/clients/{client_id}/forecast-of-conversion"
+    }
+}

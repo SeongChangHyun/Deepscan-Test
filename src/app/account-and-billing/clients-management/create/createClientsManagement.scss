@@ -1,0 +1,158 @@
+@import '@/styles/variables.scss';
+
+.create-clients {
+  padding: 0 36px;
+  /deep/.el-form-item {
+    margin-bottom: 20px;
+    &__label {
+      padding: 0;
+    }
+    &.cell-phone {
+      margin-bottom: 10px;
+    }
+    &.otp {
+      margin-bottom: 0;
+    }
+    .select-industry { 
+      width: 100%;
+    }
+    .el-input__inner {
+      border-color: #dcdfe6;
+    }
+    &.required {
+      .el-form-item__label::after {
+        content: '*';
+        color: #f56c6c;
+        margin-left: 4px;
+      }
+    }
+    &.is-error {
+      .el-input__inner {
+        border-color: #f56c6c;
+      }
+    }
+  }
+  /deep/.business-location {
+    .el-form-item {
+      margin-bottom: 8px;
+    }
+  }
+
+  /deep/.el-input--medium {
+    .el-input__inner{
+      height: 29px;
+      line-height: 29px;
+    }
+    .el-input__icon {
+      line-height: 29px;
+    }
+  }
+  /deep/ .phone-group {
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    input[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+  }
+  /deep/ .el-form-item--medium {
+    .el-form-item__content{
+      line-height: 29px;
+    }
+  }
+
+  /deep/ .el-form-item__label{
+    padding-right: 10px !important;
+    line-height: 29px;
+  }
+
+  /deep/ .el-form-item.is-required:not(.is-no-asterisk)>.el-form-item__label{
+    &::before {
+      content: '';
+      margin-right: 0;
+    }
+    &::after {
+      content: '*';
+      color: #f56c6c;
+      margin-left: 4px;
+    }
+  }
+
+  .email-action {
+    button {
+      font-size: 12px;
+    }
+  }
+
+  .w-100px {
+    min-width: 100px;
+  }
+  
+  .content-form {
+    &>div {
+      background-color: $white;
+      border: 1px solid #E5E9EC;
+      padding: 15px;
+    }
+  }
+  .timer {
+    width: fit-content;
+    float: right;
+  }
+}
+
+.mt--heightRow {
+  margin-top: -$height-row;
+}
+
+.align-ct-center{
+  text-align: center
+}
+
+.btn-register{
+  font-weight: bold;
+  border: none;
+  color: #fff;
+  background: #3cab94;
+  &.is-disabled {
+    background-color: #c8c9cc;
+    border-color: #c8c9cc;
+  }
+}
+.btn-cancel{
+  font-weight: bold;
+  border: none;
+  background-color: #ced3d9;
+  color: #4b5054;
+}
+@media(max-width: 1200px) {
+  .billing-and-access-user-container{
+    margin-top: 10px
+  }
+}
+
+.checkbox{
+  text-align: left
+}
+.checkbox{
+  margin-left: 150px;
+  @media(max-width: 768px) {
+    margin-left: 0px
+  }
+}
+
+@media(max-width: 760px) {
+  .create-clients {
+    padding: 0 20px 25px;
+  }
+  /deep/ .el-form-item__label{
+    line-height: 24px !important;
+  }
+}

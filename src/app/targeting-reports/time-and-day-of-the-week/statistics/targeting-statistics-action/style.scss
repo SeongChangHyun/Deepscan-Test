@@ -1,0 +1,61 @@
+.statistics-action {
+    padding: 10px 0px 7px 0;
+    display: flex;
+    flex-flow: wrap;
+    .el-button {
+        float: left;
+        height: 36px;
+    }
+    .el-button.statistics-button-download {
+        background-color: #1D93CF;
+        color: white;
+        margin: 5px 30px 5px 0;
+        overflow: hidden;
+    }
+    .campaign-action {
+        background-color: #1D93CF;
+        color: white;
+        margin-right: 6px;
+        padding: 5px 15px;
+        border-radius: 0;
+    }
+    .statistics-dropdown {
+        margin: 5px 30px 5px 0;
+        overflow: hidden;
+        flex: 1;
+        max-width: 200px;
+        min-width: 180px;
+    }
+}
+
+.el-button{
+    border-radius: 0;
+    border: none;
+}
+
+@media(max-width: 1237px) {
+    .statistics-action {
+        display: block;
+        .el-button.statistics-button-download, .statistics-dropdown {
+            max-width: none;
+            margin: 10px 1%;
+            width: 48%;
+            float: left;
+        }
+        .el-button.statistics-button-download:first-child {
+            width: 98%;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .statistics-action {
+        .el-button.statistics-button-download, .statistics-dropdown {
+            width: 100%;
+            margin: 10px 0;
+        }
+        .el-button.statistics-button-download:first-child {
+            width: 100%;
+        }
+    }
+}

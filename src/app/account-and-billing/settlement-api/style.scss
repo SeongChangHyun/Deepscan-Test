@@ -1,0 +1,25 @@
+.settlement-api {
+    margin: 0px 36px;
+    padding: 20px;
+    background-color: white;
+    .button-cell-table {
+        width: 100%;
+        background-color: black;
+        border-radius: 0px;
+        color: white
+    }
+    .button-download {
+        width: 150px;
+        background-color: black;
+        border-radius: 0px;
+        color: white;
+        margin-top: 10px;
+    }
+    .date-filter {
+        float: left;
+        margin-top: 10px
+    }
+    .table-bottom {
+        margin-top: 10px
+    }
+}

@@ -1,0 +1,112 @@
+export default {
+  targetingReports: {
+    dataGrid: {
+      Rows: 'rows',
+      selectPlaceholder: 'Select rows',
+      download: 'Download',
+      apply: 'Apply',
+      filter: 'Filter',
+      columns: {
+        criteria_1: 'Criteria 1',
+        criteria_2: 'Criteria 2',
+        imp: 'Imp.',
+        clicks: 'Clicks',
+        ctr: 'CTR',
+        spend: 'Spend',
+        bid_price: 'Bid Price',
+        ecpm: 'eCPM',
+        conversion: 'Conversion',
+        conversion_rate: 'Conversion Rate',
+        help_conversion_rate: 'Help Conversion Rate',
+        roas: 'ROAS',
+        conversion_cost: 'Conversion Cost',
+        revenue: 'Revenue ',
+        conversion_items: 'Conversion Items',
+        conversions_per_day: 'Conversions Per Day',
+        conversions_items_per_day: 'Conversions Items Per Day',
+        roas_per_day: 'ROAS per Day',
+        revenue_per_day: 'Revenue per Day'
+      }
+    },
+    campaignName: {
+      allCampaigns: 'All Campaigns'
+    },
+    filter: {
+      selectTargetingPlaceholder: 'Select targeting',
+      selectCampaignPlaceholder: 'Select Campaign',
+      selectTargetingTypePlaceholder: 'Select targeting type',
+      selectTargetingTimeValuePlaceholder: 'Select times and days',
+      gole: 'Gole',
+      type: 'Type',
+      targetingType: {
+        gole_label: 'Gole',
+        type_label: 'Type',
+        branding_gole: 'Branding',
+        traffic_gole: 'Traffic',
+        retention_gole: 'Retention',
+        conversion_gole: 'Conversion',
+        retargeting_type: 'Retargeting',
+        lead_targeting_type: 'Lead targeting',
+        user_targeting_type: 'User targeting',
+        topic_targeting_type: 'Topic targeting',
+        keyword_targeting_type: 'Keyword targeting'
+      },
+      dayperiod: 'Day',
+      timeperiod: 'Time',
+      listTargetingTypeValues: {
+        day_label: 'Day',
+        time_label: 'Time',
+        Mon: 'Monday',
+        Tue: 'Tuesday',
+        Wed: 'Wednesday',
+        Thu: 'Thursday',
+        Fri: 'Friday',
+        Sat: 'Saturday',
+        Sun: 'Sunday',
+        '00': '00:00 (00:00 - 00:59)',
+        '01': '01:00 (01:00 - 01:59)',
+        '02': '02:00 (02:00 - 02:59)',
+        '03': '03:00 (03:00 - 3:59)',
+        '04': '04:00 (04:00 - 04:59)',
+        '05': '05:00 (05:00 - 05:59)',
+        '06': '06:00 (06:00 - 06:59)',
+        '07': '07:00 (07:00 - 07:59)',
+        '08': '08:00 (08:00 - 08:59)',
+        '09': '09:00 (09:00 - 09:59)',
+        '10': '10:00 (10:00 - 10:59)',
+        '11': '11:00 (11:00 - 11:59)',
+        '12': '12:00 (12:00 - 12:59)',
+        '13': '13:00 (13:00 - 13:59)',
+        '14': '14:00 (14:00 - 14:59)',
+        '15': '15:00 (15:00 - 15:59)',
+        '16': '16:00 (16:00 - 16:59)',
+        '17': '17:00 (17:00 - 17:59)',
+        '18': '18:00 (18:00 - 18:59)',
+        '19': '19:00 (19:00 - 19:59)',
+        '20': '20:00 (20:00 - 20:59)',
+        '21': '21:00 (21:00 - 21:59)',
+        '22': '22:00 (22:00 - 22:59)',
+        '23': '23:00 (23:00 - 23:59)'
+      }
+    },
+    creatives: {
+      columns: {
+        criteria_1: 'Criteria 1',
+        criteria_2: 'Criteria 2',
+        accountName: 'Account Name',
+        imp: 'Imp.',
+        clicks: 'Clicks',
+        ctr: 'CTR',
+        spend: 'Spend',
+        bid_price: 'Bid Price',
+        ecpm: 'eCPM',
+        play5s: 'Play5s',
+        play15s: 'Play15s',
+        vtr: 'Vtr',
+        conversion: 'Conversion',
+        click: 'Clicks',
+        bidPrice: 'Bid Price'
+      }
+    }
+  }
+}

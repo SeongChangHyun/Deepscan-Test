@@ -1,0 +1,225 @@
+@import '@/styles/variables.scss';
+
+.input-title{
+    font-weight: bold;
+}
+
+.collapse-card {
+    .bottom-dotline {
+        border-bottom: 1px dotted darkgray;
+    }
+    /deep/ .hour-block {
+        height: 23px;
+        width: 10px;
+        border: 1px solid grey;
+        &.odd {
+            background-color: lightgrey;
+        }
+        &.active {
+            background-color: greenyellow;
+        }
+    }
+}
+
+/deep/ .el-collapse-item__header {
+   font-size: 14px;
+}
+/deep/ .el-collapse-item.is-active {
+    .el-collapse-item__header {
+        background-color: #F3F5F7;
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
+
+/deep/ .list-date {
+    height: 92px;
+    margin: 10px 0;
+    overflow: auto;
+}
+
+/deep/ .el-button--mini {
+    padding: 4px 8px;
+    font-size: 11px;
+}
+/deep/ .with-55.el-select {
+    width: 52px;
+}
+
+/deep/ .allow-os .el-checkbox__label {
+    padding-left: 4px;
+}
+
+/deep/ .block-os .el-checkbox__label {
+    padding-left: 4px;
+}
+
+/deep/ .close-btn {
+    font-size: 14px;
+    color: #BAC0C7;;
+    font-weight: 500;
+    &:hover {
+        color: #F20808;
+    }
+}
+
+/deep/ .el-tree {
+    >.el-tree-node {
+        padding: 9px 12px;
+        border-bottom: 1px solid #E5E9EC;
+        :last-child {
+            border-bottom: none;
+        }
+    }
+    .el-tree-node__content {
+        padding: 15px;
+    }
+}
+/deep/ .line {
+    width: 1px;
+    align-self: stretch;
+    background: #E5E9EC;;
+    margin: 15px 0;
+}
+
+/deep/ input.no-radius-bottom {
+    border-radius: 3px 3px 0 0;
+}
+
+/deep/ .container-block {
+    border: 1px solid #E5E9EC;
+    border-top: none;
+    border-radius: 0 0 3px 3px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    .container-item {
+        padding: 15px;
+        overflow-y: auto;
+        max-height: 250px;
+        .item {
+            margin-top: 10px;
+        }
+        .remove-all-btn {
+            color: #1D93CF;
+            text-align: right;
+            cursor: pointer;
+        }
+        .targeted-data {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    .line-top {
+        border-top: 1px solid #E5E9EC;
+        padding-bottom: 0;
+    }
+    .targeted,.target {
+        color: #6DC0B7;
+        cursor: pointer;
+    }
+    .exclude,.excluded {
+        color: #9E99DB;
+        cursor: pointer;
+    }
+}
+
+.expand-container {
+    border: none;
+    .el-collapse-item {
+      border: 1px solid #ebeef5;
+      margin-bottom: 10px;
+      /deep/ .el-collapse-item__header {
+        padding: 20px;
+      }
+      /deep/ .el-collapse-item__content {
+        padding: 0px 20px;
+      }
+    }
+    .el-collapse-item.is-active {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+      /deep/ .el-collapse-item__header {
+        background: #eee;
+      }
+    }
+  }
+.group-btn {
+    width: 100%;
+    text-align: center;
+    button {
+    padding: 10px 25px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+        margin: 5px 0;
+    }
+    .btn-next {
+    background-color: $bluePrimary;
+    }
+    .btn-next:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    }
+    .btn-imp {
+    background-color: #3cab94;
+    margin: 0 0 0 20px;
+    }
+    .btn-cancel {
+    margin: 0 0 0 20px;
+    background-color: #ced3d9;
+    color: #4b5054;
+    }
+}
+.h-mg-b-20{
+    margin-bottom: 20px
+}
+
+.header-match-creatives{
+    background: #dfecf4;
+    padding: 10px 20px;
+    margin: 10px 0;
+    .item-estimate{
+        margin:  10px 0;
+        padding: 0;
+        .title{
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            font-size: 14px;
+            padding-right: 10px;
+        }
+        .label{
+            color: #4c5154;
+            font-size: 14px;
+            padding-right: 10px;
+        }
+        .total{
+            color: #1c92cf;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+}
+
+/deep/ .el-icon-minus:before{
+    color: #239EDC;
+}
+/deep/ .el-icon-plus:before  {
+    color: #239EDC;
+}
+/deep/ .el-collapse-item__header {
+    .el-collapse-item__arrow{
+        color: #239EDC;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /deep/.el-collapse-item__header {
+        padding: 10px !important;
+    }
+    /deep/.el-collapse-item__content {
+        padding: 10px !important;
+    }
+}

@@ -1,0 +1,98 @@
+.statistics-action {
+    flex-direction: row;
+    display: flex;
+    padding: 15px 0px 10px 0px;
+    .el-button {
+        margin: 0px;
+        margin-left: 0px;
+        padding: 4px 8px;
+        float: left;
+        height: 36px
+    }
+    .el-button.statistics-button-download {
+        float: left;
+        background-color: #1D93CF;
+        color: white;
+        padding: 5px 10px;
+    }
+    .campaign-action {
+        background-color: #1D93CF;
+        color: white;
+        margin-right: 6px;
+        padding: 5px 15px;
+        border-radius: 0;
+    }
+    .right-content {
+        width: 100%;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        .action-statistics-campaign {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            .float-right {
+                display: flex;
+            }
+        }
+        .margin-left-8 {
+            margin-left: 8px;
+        }
+        .right-menu-item {
+            float: right;
+            margin-left: 8px
+        }
+    }
+    .statistics-dropdown {
+        float: right;
+    }
+    .grid-rows {
+        float: left;
+        margin-left: 8px;
+        max-width: 170px;
+    }
+}
+
+@media(max-width: 980px) {
+    .statistics-action {
+        flex-direction: column;
+        padding: 15px 0px 10px 0px;
+        .right-content {
+            display: inline;
+            .right-menu-item {
+                margin-top: 0px;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .statistics-action .right-content .action-statistics-campaign {
+        display: flex;
+    }
+    .statistics-action {
+        flex-direction: column;
+        width: 100%;
+        padding: 15px 0px 10px 0px;
+        .right-content {
+            flex-direction: column;
+            .action-statistics-campaign {
+                .float-right {
+                    padding-left: 15px;
+                    display: block;
+                    .reporting-type {
+                        width: 100%;
+                        max-width: none;
+                        float: right;
+                        margin: 0px 0px 10px 0px;
+                    }
+                }
+            }
+        }
+    }
+    .statistics-action .grid-rows {
+        float: right;
+        width: 100%;
+        max-width: none;
+    }
+}

@@ -1,0 +1,14 @@
+.statistics {
+    background-color: #fff;
+    margin-top: 15px;
+    padding: 20px;
+    /deep/ .el-table {
+        th {
+            background-color: #E8EBEE;
+            color: #323A46;
+        }
+        td {
+            color: #323A46;
+        }
+    }
+}

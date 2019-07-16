@@ -1,0 +1,201 @@
+@import '@/styles/variables.scss';
+
+.client-management {
+  background: #fff;
+  margin: 0 36px;
+  padding: 15px;
+  border: 1px solid #E5E9EC;
+  .action-row{
+    padding-bottom: 1rem;
+    .el-button{
+      height: 29px;
+      float: left;
+      border-radius: 0;
+      padding: 8px 15px;
+      &.btn-create{
+        background-color: #1D93CF;
+      }
+      &.btn-delete{
+        border-color:  #1D93CF;
+        color:  #1D93CF;
+        background: #fff;
+        .client-stop {
+          color:  #1D93CF;
+        }
+        .client-enabled {
+          color:  #1D93CF;
+        }
+      }
+      &.btn-delete.is-disabled{
+        border-color:  #ccc;
+        color:  #ccc;
+        background: #fff;
+        .client-stop {
+          color:  #ccc;
+        }
+        .client-enabled {
+          color:  #ccc;
+        }
+      }
+    }
+    .group-btn-show {
+      float: left;
+      margin: 0 15px;
+      font-size: 14px;
+      line-height: 29px;
+    }
+    .show-all-status {
+      cursor: pointer;
+      color: #1D93CF;
+      font-weight: 700;
+      margin-right: 10px;
+    }
+    .show-all-status.disabled {
+      color: #BBBCC0;
+    }
+    .show-enable-status {
+      cursor: pointer;
+      color: #1D93CF;
+      font-weight: 700;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .show-enable-status.disabled {
+      color: #BBBCC0;
+    }
+    .client-hidden-number {
+      white-space: nowrap;
+    }
+    .select-per-page {
+      width: 120px;
+      float: right;
+    }
+    .group-per-page {
+      ::v-deep input {
+        height: 29px;
+      }
+      ::v-deep i {
+        line-height: 29px;
+      }
+    }
+    @media(max-width: 760px) {
+      padding-bottom: 0px;
+      width: 100%;
+      .el-button{
+        border-radius: 0;
+        &.btn-create{
+          background-color: #1D93CF;
+          /deep/ .el-icon-edit-outline{
+          margin-left: -10px;
+          }
+        }
+        &.btn-delete{
+          background-color: #f6f7f9;
+          /deep/ .el-icon-delete{
+            margin-left: -15px;
+          }
+        }
+      }
+      .select-per-page {
+        float: left;
+      }
+    }
+  }
+  .el-table{
+    /deep/ th {
+      background: #E5E9EC;
+      color: #000;
+    }
+    /deep/ th, /deep/ td {
+      padding: 5px 0;
+      border-left: 0;
+      border-right: 0;
+      a{
+        color: #1D93CF;
+        text-decoration: none;
+      }
+    }
+  }
+  /deep/ .el-pagination {
+    .el-pager li {
+      height: 32px;
+      line-height: 32px;
+    }
+    button {
+      height: 32px;
+    }
+  }
+  .pagination-custom{
+    text-align: center;
+    margin-top: 20px;
+    /deep/ button{
+      border: 1px solid #E5E9EC;
+      &.btn-prev{
+        border-right: none;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+      }
+      &.btn-next{
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+      }
+    }
+    // button
+    /deep/ ul{
+      border-collapse: collapse;
+    }
+    /deep/ li {
+      border: 1px solid #E5E9EC;
+      border-right: none;
+      &.active{
+        background-color: #DFECF4; 
+      }
+    }
+  }
+  .no-data {
+    /deep/ .el-table__body-wrapper {
+      overflow-x: hidden !important;
+    }
+  }
+}
+
+.text-gray{
+  color: #BBBCC0;
+}
+
+@media(max-width: 767px) {
+  .client-management {
+    margin: 0 20px;
+    /deep/ .group-btn-show{
+      margin: 0 !important;
+    }
+  }
+  
+  .btn-create{
+    float: left;
+    margin-left: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .btn-delete{
+    float: left;
+    margin-left: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+  }
+  .group-per-page{
+    float: left;
+  }
+  .select-per-page {
+    float: left;
+    margin-bottom: 10px;
+  }
+}
+
+.group-per-page{
+ float: right;
+ @media screen and (max-width:767px) {
+   float: none;
+ }
+}
