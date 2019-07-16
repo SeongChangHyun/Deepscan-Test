@@ -1,6 +1,0 @@
-export const permissionMutationTypes = {
-  SET_ROUTERS: 'SET_ROUTERS',
-  SET_LEVEL_ROUTERS: 'SET_LEVEL_ROUTERS',
-  SET_DATA_ROUTER_INFO: 'SET_DATA_ROUTER_INFO'
-}
-
